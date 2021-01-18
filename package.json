@@ -1,0 +1,17 @@
+{
+  "name": "cqplugin",
+  "version": "1.0.0",
+  "description": "Plugin for helping CQ Team in development progress",
+  "cordova": {
+    "id": "cq.plugin.mobile.app",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "CQ Surabaya",
+  "license": "ISC"
+}
