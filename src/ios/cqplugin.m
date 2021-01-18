@@ -1,15 +1,15 @@
-/********* CQPlugin.m Cordova Plugin Implementation *******/
+/********* cqplugin.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
 
-@interface CQPlugin : CDVPlugin {
+@interface cqplugin : CDVPlugin {
   // Member variables go here.
 }
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command;
 @end
 
-@implementation CQPlugin
+@implementation cqplugin
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command
 {
