@@ -1,12 +1,14 @@
 /********* cqplugin.m Cordova Plugin Implementation *******/
 
+#import <WebKit/WebKit.h>
 #import <Cordova/CDV.h>
 
 @interface cqplugin : CDVPlugin {
   // Member variables go here.
 }
 
-- (void)coolMethod:(CDVInvokedUrlCommand*)command;
+@property (weak, nonatomic) IBOutlet WKWebView *webview;
+
 @end
 
 
@@ -38,7 +40,7 @@
     NSString* url = [command.arguments objectAtIndex:0];
     NSURL* scorm = [NSURL URLWithString:url];
     NSURL* scormAccess = [scorm URLByDeletingLastPathComponent];
-    // [(WKWebView*)_engineWebView loadFileURL:scorm allowingReadAccessToURL:scormAccess];
+    [_webview loadFileURL:scorm allowingReadAccessToURL:scormAccess];
 }
 
 @end
