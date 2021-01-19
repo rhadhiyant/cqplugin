@@ -38,7 +38,7 @@
     NSString* url = [command.arguments objectAtIndex:0];
     NSURL* scorm = [NSURL URLWithString:url];
     NSURL* scormAccess = [scorm URLByDeletingLastPathComponent];
-    [(WKWebView*)_engineWebView loadFileURL:scorm allowingReadAccessToURL:scormAccess];
+    // [(WKWebView*)_engineWebView loadFileURL:scorm allowingReadAccessToURL:scormAccess];
 }
 
 @end
